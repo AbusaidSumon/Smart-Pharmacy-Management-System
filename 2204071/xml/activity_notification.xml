@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F8F7">
+
+    <!-- HEADER -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="10dp"
+        android:background="#174A45">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔔 Notifications"
+            android:textColor="@android:color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnMarkAllRead"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Read All"
+            android:textSize="13sp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:backgroundTint="#287C70"/>
+
+    </LinearLayout>
+
+    <!-- NOTIFICATION LIST -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/notificationContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+    <!-- BOTTOM BUTTONS -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="7dp">
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Refresh"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#287C70"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#76552D"/>
+
+    </LinearLayout>
+
+</LinearLayout>
