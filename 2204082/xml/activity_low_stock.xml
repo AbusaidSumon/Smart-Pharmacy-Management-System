@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F8F7">
+
+    <!-- Header -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#174A45"
+        android:padding="14dp"
+        android:text="LOW STOCK MEDICINES"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Medicine List -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/lowStockContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <!-- Refresh -->
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#287C70"
+        android:text="Refresh"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <!-- Back -->
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#E1EFEC"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="#174A45"
+        android:textSize="18sp" />
+
+</LinearLayout>
