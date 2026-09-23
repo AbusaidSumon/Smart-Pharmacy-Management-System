@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F3EE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- ================================= -->
+        <!-- HEADER -->
+        <!-- ================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="#174A45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💊"
+                android:textSize="38sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Medicine"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add a new medicine to pharmacy inventory"
+                android:textSize="14sp"
+                android:textColor="#DCEBE7"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+
+        <!-- ================================= -->
+        <!-- FORM CONTAINER -->
+        <!-- ================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="16dp">
+
+
+            <!-- ================================= -->
+            <!-- MEDICINE NAME -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine Name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#174A45" />
+
+            <EditText
+                android:id="@+id/edtMedicineName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Enter medicine name"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:backgroundTint="#287C70"
+                android:layout_marginTop="6dp" />
+
+
+            <!-- ================================= -->
+            <!-- CATEGORY -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#174A45"
+                android:layout_marginTop="18dp" />
+
+            <EditText
+                android:id="@+id/edtCategory"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Enter category"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:backgroundTint="#287C70"
+                android:layout_marginTop="6dp" />
+
+
+            <!-- ================================= -->
+            <!-- PRICE -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#174A45"
+                android:layout_marginTop="18dp" />
+
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Enter price"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:backgroundTint="#287C70"
+                android:layout_marginTop="6dp" />
+
+
+            <!-- ================================= -->
+            <!-- QUANTITY -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#174A45"
+                android:layout_marginTop="18dp" />
+
+            <EditText
+                android:id="@+id/edtQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Enter quantity"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:backgroundTint="#287C70"
+                android:layout_marginTop="6dp" />
+
+
+            <!-- ================================= -->
+            <!-- COMPANY -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#174A45"
+                android:layout_marginTop="18dp" />
+
+            <EditText
+                android:id="@+id/edtCompany"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Enter company name"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:backgroundTint="#287C70"
+                android:layout_marginTop="6dp" />
+
+
+            <!-- ================================= -->
+            <!-- ADD MEDICINE BUTTON -->
+            <!-- ================================= -->
+
+            <Button
+                android:id="@+id/btnAddMedicine"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="＋  Add Medicine"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#76552D"
+                android:layout_marginTop="25dp" />
+
+
+            <!-- ================================= -->
+            <!-- BACK BUTTON -->
+            <!-- ================================= -->
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="←  Back"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#174A45"
+                android:backgroundTint="#E8F3F0"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+
+        <!-- ================================= -->
+        <!-- FOOTER -->
+        <!-- ================================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Pharmacy • Medicine Inventory"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="15dp" />
+
+    </LinearLayout>
+
+</ScrollView>

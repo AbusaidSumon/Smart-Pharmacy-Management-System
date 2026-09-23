@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="30dp"
+            android:background="#174A45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💊"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMART PHARMACY"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Safe • Simple • Smart"
+                android:textSize="14sp"
+                android:textColor="#DCEBE7"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+
+        <!-- USER SECTION -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#174A45"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+            android:id="@+id/btnUserLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="User Login"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#287C70"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnUserRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="User Registration"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#174A45"
+            android:backgroundTint="#E1EFEC"
+            android:layout_marginTop="8dp"/>
+
+
+        <!-- ADMIN / PHARMACIST SECTION -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADMIN / PHARMACIST"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#174A45"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Authorized pharmacy staff only"
+            android:textSize="13sp"
+            android:textColor="#777777"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnAdminLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Admin / Pharmacist Login"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#76552D"
+            android:layout_marginTop="10dp"/>
+
+
+        <!-- SECURITY NOTE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔒 Only authorized pharmacy staff can access the management system."
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:padding="10dp"/>
+
+
+        <!-- FOOTER -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Pharmacy • Your trusted pharmacy partner"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

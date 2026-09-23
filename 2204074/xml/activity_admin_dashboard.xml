@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8F7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#174A45"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="SMART PHARMACY"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Dashboard Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Admin Dashboard"
+            android:textColor="#174A45"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Add Medicine -->
+        <Button
+            android:id="@+id/btnAddMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#287C70"
+            android:text="💊  Add Medicine"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Manage Medicine -->
+        <Button
+            android:id="@+id/btnManageMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#287C70"
+            android:text="📋  Manage Medicine"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Stock Management -->
+        <Button
+            android:id="@+id/btnStock"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#287C70"
+            android:text="📦  Stock Management"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Sales -->
+        <Button
+            android:id="@+id/btnSales"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#287C70"
+            android:text="💰  Sales"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Sales Records -->
+        <Button
+            android:id="@+id/btnSalesRecords"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#287C70"
+            android:text="📊  Sales Records"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Purchase -->
+        <Button
+            android:id="@+id/btnPurchase"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#287C70"
+            android:text="🛒  Purchase"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Purchase Records -->
+        <Button
+            android:id="@+id/btnPurchaseRecords"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#287C70"
+            android:text="📊  Purchase Records"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+        <!-- Low Stock + Alert Badge -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnLowStock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#287C70"
+                android:text="⚠️  Low Stock Medicines"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Red Alert Badge -->
+            <TextView
+                android:id="@+id/txtLowStockBadge"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_red_badge"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnCustomerOrders"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="📦  Customer Orders"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#287C70"
+            android:layout_marginTop="10dp" />
+
+        <!-- Admin Profile -->
+        <Button
+            android:id="@+id/btnAdminProfile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#287C70"
+            android:text="👤  Admin Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Logout -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#76552D"
+            android:text="🚪  Logout"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Security / Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#E1EFEC"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="🔐  Admin / Pharmacist Panel&#10;Authorized pharmacy staff only"
+            android:textColor="#174A45"
+            android:textSize="14sp" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Smart Pharmacy Management System"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>

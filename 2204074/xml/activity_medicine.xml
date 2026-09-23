@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- ================================= -->
+        <!-- HEADER -->
+        <!-- ================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="25dp"
+            android:background="#174A45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💊"
+                android:textSize="45sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEDICINES"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse available medicines"
+                android:textSize="14sp"
+                android:textColor="#DCEBE7"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+
+        <!-- ================================= -->
+        <!-- MEDICINE LIST -->
+        <!-- ================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Medicines"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#174A45"
+                android:layout_marginBottom="15dp" />
+
+
+            <!-- Firebase medicines will appear here -->
+
+            <LinearLayout
+                android:id="@+id/medicineContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+
+        <!-- ================================= -->
+        <!-- BACK BUTTON -->
+        <!-- ================================= -->
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="←  Back"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#174A45"
+            android:backgroundTint="#E1EFEC"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- ================================= -->
+        <!-- FOOTER -->
+        <!-- ================================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Pharmacy • Safe • Simple • Smart"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:layout_marginBottom="15dp" />
+
+    </LinearLayout>
+
+</ScrollView>
